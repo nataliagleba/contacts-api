@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.log
+.idea
+
+*.sqlite
+
+celerybeat-schedule.db
+celerybeat.pid
