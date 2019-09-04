@@ -1,6 +1,6 @@
-import os
 from datetime import datetime, timedelta
 from flask import json
+import os
 
 from api import *
 from schemas import contact_schema
@@ -9,7 +9,6 @@ from tasks import delete_contacts, populate_contacts
 
 class TestContactsService():
     def setup(self):
-        import os
         basedir = os.path.abspath(os.path.dirname(__file__))
         app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'test.sqlite')
         db.create_all()
