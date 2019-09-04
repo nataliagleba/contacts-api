@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from extensions import db
+from app import db
 
 
 class Contact(db.Model):

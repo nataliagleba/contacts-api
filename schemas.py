@@ -1,8 +1,4 @@
-from flask_marshmallow import Marshmallow
-
-from app_factory import app
-
-ma = Marshmallow(app)
+from app import ma
 
 
 class EmailSchema(ma.Schema):
