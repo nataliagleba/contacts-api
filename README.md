@@ -1,5 +1,7 @@
 # Contacts API
 
+start API: `python api.py`
+
 - Get list of all Contacts:
 
 `GET: /contacts`
@@ -37,12 +39,12 @@ payload: {
 
 start redis server
 
-start API app:
-`python app.py`
-
 start celery beat:
 `celery -A tasks beat --loglevel=info`
 
 start celery worker:
 `celery -A tasks worker --loglevel=info`
 
+# Testing
+
+run `py.test`
